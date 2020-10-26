@@ -1,1 +1,1 @@
-# ca_html_css_squareeyes
+# HTML & CSS: Course Assignment
