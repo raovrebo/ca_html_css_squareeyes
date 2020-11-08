@@ -555,7 +555,6 @@ button:hover {
   color: var(--green-color);
   font-size: 1rem;
   padding: 0.8rem 1.3rem;
-  /* margin-top: 10rem; */
   text-transform: uppercase;
 }
 
@@ -575,7 +574,7 @@ button:hover {
   width: 90%;
   display: grid;
   padding: 0px 50px 0px 50px;
-  margin: 5200px 100px 10px 0;
+  margin: 200px 100px 10px 0;
   align-items: center;
   justify-content: center;
   grid-template-columns: 1fr 2fr 6fr 1fr 1fr 1fr;
@@ -651,7 +650,7 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  gap: 10px;
+  gap: 20px;
   cursor: pointer;
 }
 
@@ -661,4 +660,122 @@ button:hover {
 
 .social ul li:hover {
   color: var(--primary-color);
+}
+
+@media (max-width: 1700px) {
+  .showcase-home {
+    width: 90%;
+    background: url("../img/home.jpg") no-repeat center center;
+  }
+  .showcase-search {
+    width: 90%;
+    background: url("../img/search.jpg") no-repeat center center;
+  }
+  .showcase-film {
+    width: 90%;
+    background: url("../img/filmpage.jpg") no-repeat center center;
+  }
+
+  .showcase-ppv {
+    width: 90%;
+    background: url("../img/ppv.jpg") no-repeat center center;
+  }
+
+  .showcase-createacc {
+    width: 90%;
+    background: url("../img/createacc.jpg") no-repeat center center;
+  }
+
+  .showcase-account {
+    width: 90%;
+    background: url("../img/account.jpg") no-repeat center center;
+  }
+
+  .showcase-content .film li {
+    width: 80px;
+  }
+
+  .order-details img {
+    width: 50px;
+  }
+
+  .order-details p {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .subtotal p {
+    padding: 0.5rem 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .showcase-home::after {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 80px 80px 150px var(--dark-color),
+      inset -80px -80px 150px var(--dark-color);
+  }
+
+  .showcase-search::after {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 80px 80px 150px var(--dark-color),
+      inset -80px -80px 150px var(--dark-color);
+  }
+
+  .showcase-film::after {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 80px 80px 150px var(--dark-color),
+      inset -80px -80px 150px var(--dark-color);
+  }
+
+  .showcase-ppv::after {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 80px 80px 150px var(--dark-color),
+      inset -80px -80px 150px var(--dark-color);
+  }
+
+  .showcase-createacc::after {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 80px 80px 150px var(--dark-color),
+      inset -80px -80px 150px var(--dark-color);
+  }
+
+  .showcase-account::after {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 80px 80px 150px var(--dark-color),
+      inset -80px -80px 150px var(--dark-color);
+  }
+
+  .showcase-content h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .showcase-content p {
+    font-size: 1rem;
+  }
+
+  .showcase-details h1 {
+    font-size: 2.5rem;
+  }
+
+  .showcase-details h2 {
+    font-size: 1.4rem;
+  }
+
+  .showcase-details p {
+    font-size: 1rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn-xl {
+    font-size: 1rem;
+    padding: 1.2rem 1.6rem;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 600) {
 }
