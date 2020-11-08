@@ -28,6 +28,7 @@ body {
   color: var(--dark-color);
   padding: 0.6rem 1.3rem;
   text-decoration: none;
+  text-transform: uppercase;
   border: 0;
 }
 ul {
@@ -84,16 +85,15 @@ img {
   width: 130px;
   position: relative;
   top: 50%;
-  left: 10%;
+  left: 5%;
   transform: translate(-50%, -50%);
   margin-left: 0;
 }
 
 .showcase-top img:hover {
   display: inline-block;
-  /* color: var(--primary-color); */
   background: var(--primary-color);
-  box-shadow: 5px 5px 5px rgba(220, 121, 61, 0.45);
+  box-shadow: 5px 5px 5px rgba(220, 121, 62, 0.9);
   border-radius: 10px;
   cursor: pointer;
 }
@@ -101,7 +101,7 @@ img {
 .showcase-top a {
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 0%;
   transform: translate(-50%, -50%);
 }
 
@@ -254,7 +254,7 @@ img {
 }
 
 .showcase-content .film li:hover {
-  box-shadow: 20px 20px 20px rgba(220, 121, 62, 0.45);
+  box-shadow: 20px 20px 20px rgba(220, 121, 62, 0.9);
 }
 
 /* Showcase PPV Page */
@@ -371,14 +371,14 @@ input[type="date"] {
   width: 70%;
   background-color: var(--light-color);
   color: var(--dark-color);
-  box-shadow: 3px 3px rgba(220, 121, 61, 0.9);
+  box-shadow: 3px 3px rgba(220, 121, 62, 0.9);
   margin-bottom: 30px;
   opacity: 0.8;
 }
 
 input:focus {
-  box-shadow: 0 0 5px rgba(220, 121, 61, 0.9);
-  border: 5px solid rgba(220, 121, 61, 0.9);
+  box-shadow: 0 0 5px rgba(220, 121, 62, 0.9);
+  border: 5px solid rgba(220, 121, 62, 0.9);
 }
 
 input[type="radio"] {
@@ -416,6 +416,70 @@ button:hover {
   background-color: var(--green-color);
 }
 
+/* Showcase Account Page */
+.showcase-account {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../img/account.jpg") no-repeat center center/cover;
+}
+
+.showcase-account::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px var(--dark-color),
+    inset -120px -100px 250px var(--dark-color);
+}
+.showcase-details ul {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 1fr;
+}
+
+.showcase-details h1 {
+  background: var(--dark-color);
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 20px;
+  text-align: center;
+  font-size: 4rem;
+  border-radius: 10px;
+}
+
+.showcase-details h2 {
+  background: var(--dark-color);
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 5px;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+.showcase-details p {
+  background: var(--dark-color);
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 10px;
+}
+
 /* Navigation */
 .main-nav ul {
   position: relative;
@@ -444,7 +508,7 @@ button:hover {
 .main-nav a:hover {
   background: var(--dark-color);
   color: var(--light-color);
-  box-shadow: 5px 5px 5px rgba(220, 121, 62, 0.45);
+  box-shadow: 5px 5px 5px rgba(220, 121, 62, 0.9);
   border-radius: 10px;
 }
 
@@ -464,11 +528,11 @@ button:hover {
 
 .btn:hover {
   opacity: 0, 0.9;
-  box-shadow: 5px 5px 5px rgba(220, 121, 62, 0.45);
+  box-shadow: 5px 5px 5px rgba(220, 121, 62, 0.9);
   border-radius: 10px;
 }
 
-.btn-rounded {
+.btn-login {
   border-radius: 10px;
 }
 
@@ -511,17 +575,21 @@ button:hover {
   width: 90%;
   display: grid;
   padding: 0px 50px 0px 50px;
-  margin: 5200px 100px 10px 100px;
+  margin: 5200px 100px 10px 0;
   align-items: center;
   justify-content: center;
   grid-template-columns: 1fr 2fr 6fr 1fr 1fr 1fr;
+}
+
+.footer img {
+  width: 130px;
 }
 
 .footer img:hover {
   display: inline-block;
   color: var(--primary-color);
   background: var(--primary-color);
-  box-shadow: 5px 5px 5px rgba(220, 121, 62, 0.45);
+  box-shadow: 5px 5px 5px rgba(220, 121, 62, 0.9);
   border-radius: 10px;
 }
 
@@ -583,7 +651,7 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  gap: 30px;
+  gap: 10px;
   cursor: pointer;
 }
 
